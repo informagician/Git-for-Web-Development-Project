@@ -1,2 +1,103 @@
-Milo Rastgoo
-Toronto, Canada
+Link to codepen assignment: https://codepen.io/rastgoo/pen/ZEEXWvG
+
+1. What is Semantic HTML? 
+semantic html introduces elements with meaning to web page layouts. it is used both for web browsers and user agents such as screen readers.
+2. What is HTML used for? 
+HTML is used to markup contents of a web page. Markup part is similar to traditional editorial tags/markings for newspapers/books editorials and Hypertext part of it refers to webpages with innerlinks to each other and other resources. 
+3. What is an attribute and where do we put it?
+Attributes provide additional information about an element's configuation or behaviour.An attribute is added to an HTML start tag. 
+4. What is the h1 tag used for? How many times should I use it on a page?
+h1 is the first level heading. General best practice is to use it only once on every webpage for the most important heading.
+5. Name two tags that have required attributes
+a, img
+6. What do we put in the head of our HTML document? 
+meta information that is targetted to web browsers, search engines etc. and not for human beings.
+7. What is an id? 
+id is an identifier attribute which is used uniquely in a webpage. It is used to point to an HTML tag to be used in CSS and/or javascript.
+8. What elements can I add an id to? 
+according to w3schools, In HTML 5 the id attribute can be used on any HTML tag even if not useful. In previous version there are some exclusions and they cannot start with numbers.
+9. How many times can I use the same id on a page? 
+an id is a unique pointer and an id=value pair should be used only once on a webpage.
+10. What is a class? 
+class is an HTML attribute that specifies one or more classes for a given html element. classes can be used by css and/or javascript to make changes to an html element.
+11. What elements can I add a class to? 
+As of HTML 5, all HTML elements can have class attribute eventhough it might not be useful.
+12. How many times can I use the same class on a page? 
+AFAIK, there are no limits on using the same class on a page.
+13. How do I get my link to open in a new tab?
+using target attribute in a tag: target="_blank"
+14. What is the alt attribute used for? 
+alt attribute is used for images where the image cannot be read from source, for screen readers and accessiblity cases, search engine optimization and image search. etc.
+15. How do I reference an id?
+in CSS we can refer to ids using #idName
+16. What is the difference between a section and a div
+A div is a presentational HTML tag to group pieces of content together. section is a semantic HTML tag that specifies and seperates a section of a page from the rest of the page content.
+17. What is CSS used for? 
+CSS as Cascadig Style Sheets is used to define the presentation and style of an HTML document. (according to Mozilla its also used to describe elements rendering on screen, paper, in speech, or other media??!!, I'll research this. very interesting)
+18. How to we select an element? Example - every h2 on the page
+all html tags can be selected using their tag name: h2
+19. What is the difference between a class and an id? - Give me an example of when I might use each one
+same class key-value pair can be used multiple times on an HTML document, but same id key-value pair can be used only once on an HTML document.
+For example, we might want to select all div tags with class of "product" to have a margin of 25px all around. but we might want to select only one of those div tags to perform a javascript-based manipulation on it. in this case we use id.
+20. How do we select classes in CSS?
+a period and class name: .className
+21. How do we select a p element with a single class of “human””?
+p.human or .human
+22. What is a parent child selector? When would this be useful? 
+This selector uses > to select a tag with specific parent. This way, those tags that are not directly a child of the stated parent are not referred to.
+23. How do you select all links within a div with the class of sidebar?
+sidebar > a
+24. What is a pseudo selector?
+pseudo selector are used to configure and manipulate a specific state of an element. for example the hover state of a tag.
+25. What do we use the change the spacing between lines?
+line-height
+26. What do we use to change the spacing between letters?
+letter-spacing
+27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+text-transform
+28. How do I add a 1px border around my div that is dotted and black?
+border: 1px dotted black;
+29. How do I select everything on the page? 
+* {property:value;}
+30. How do I write a comment in CSS?
+/* Comment */
+31. How do I find out what file I am in, when I am using the command line? 
+If you mean folder pwd. for files, it depends on the text editor!
+32. Using the command line - how do I see a list of files/folders in my current folder?
+ls -al
+33. How do I remove a file via the command line? Why do I have to be careful with this? 
+rm filename, there is no undo nor warning
+34. Why should I use version control? 
+- to keep multiple version of work in progress file.
+- working in collaboration with team on same file. instead of over-writing each others work, we could keep our own and merge at the end.
+35. How often should I commit to github?
+IMHO, commits should be done in an atomic fashion, after a meaningful change/update. Lambda suggests every 20 mins.
+36. What is the command we would use to push our repo up to github? 
+git push origin master (firstname-lastname)
+37. Walk me through Lambda's git flow. 
+a. fork the repo and make it own
+b. invite our TL as collaborator so (s)he can later review and merge our codepen
+c. clone repo on local
+d. create a branch with name combo 'firstname-lastname'
+e. make changes to our own branch, do adds, do commits and push to github.
+f. make a pull request against our own master and select our Teamlead as reviewer. 
+g. Teamlead will then review our work and merge it with master branch on github.
+
+Stretch Questions
+
+1. What is the difference between an inline element and a block element?
+block elements start on a new line and take as much space as possible on left and right. for example <div>
+inline elements take as much space as neccessary. for example <span>
+2. What happens when an element is positioned absolutely? 
+element with absolute positioning is removed from the normal document flow and is positioned against its parent element.
+3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
+display: inline-block gives it the best of the two worlds.
+4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+block: <div> <h1> <p>
+inline: <span> <a>
+inline-block: <img> 
+5. In your own words, explain the box model. What is the fix for the box model?
+in HTML all elements can be considered as nested boxes. each box can have:
+margin: space around the box or between the box and the next box
+border: thickness of the edge of imaginary box itself.
+padding: space within the box and the next box(es) inside.
