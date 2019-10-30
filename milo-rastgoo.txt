@@ -95,7 +95,7 @@ display: inline-block gives it the best of the two worlds.
 4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
 block: <div> <h1> <p>
 inline: <span> <a>
-inline-block: <img> 
+inline-block: <input> 
 5. In your own words, explain the box model. What is the fix for the box model?
 in HTML all elements can be considered as nested boxes. each box can have:
 margin: space around the box or between the box and the next box
